@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto World</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Redressed', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/minato.jpg');
+        /* height: 1080px;
+        width: 1920px; */
+        background-position: top;
+        color: rgb(0, 0, 0);
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 115px;
+        height: 95px;
+        /* filter: invert(); */
+    }
+
+    .left div {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 1000;
+        font-size: 15px;
+        /* background-color: rgb(231, 230, 140); */
+    }
+
+    .mid {
+        /* border: 2px solid rgb(0, 0, 0); */
+        display: block;
+        margin: auto;
+        margin-top: 59px;
+        width: 70%;
+        padding: 10px;
+        /* background-color: rgb(226, 231, 231); */
+        border-radius: 10px;
+    }
+
+    .right {
+        /* border: 2px solid rgb(0, 0, 0); */
+        position: absolute;
+        right: 9px;
+        top: 53px;
+        display: inline-block;
+        margin: 4px -2px;
+        padding: 0px 0px;
+        /* border-radius: 6px; */
+        /* background-color: rgb(226, 231, 231); */
+    }
+
+    .right .btn {
+        margin: 9px 7px;
+        padding: 2px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+        /* background-color: rgb(231, 230, 140); */
+        border-radius: 4px;
+        /* border: 2px solid; */
+        padding: 10px 20px;
+        margin: 0px 6px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #141c8b;
+    }
+
+    .navbar li a {
+        color: rgb(0, 0, 0);
+        /* padding-right: 96px; */
+        margin: 0px 48px;
+        font-weight: 1000;
+        text-decoration: none;
+        text-decoration: underline;
+    }
+
+    /* .navbar li:hover {
+        background-color: rgb(49, 13, 83);
+    } */
+
+    .btn {
+        font-family: 'Redressed', cursive;
+        margin: 40px 8px;
+        /* color: rgb(0, 0, 0); */
+        background-color: #ebbb85;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 1px 1px;
+    }
+
+    .btn:hover {
+        color: aliceblue;
+        background-color: rgb(49, 13, 83);
+    }
+
+    .container {
+        border: 5px solid rgb(19, 19, 19);
+        margin: 106px 80px;
+        padding: 8px 50px;
+        width: 33%;
+        border-radius: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* div.logo {
+        border: 2px solid black;
+        border-radius: 4px;
+    } */
+
+    .form-group button {
+        padding: 5px 20px;
+        font-size: 40px;
+        margin: 9px 0px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 96%;
+        padding: 10px;
+        border: 3px solid black;
+        border-radius: 25px;
+        font-size: 25px;
+        margin: -4px auto;
+        font-family: 'Redressed', cursive;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/itachi.jpg" alt="">
+            <div class="logo">Naruto World</div>
+        </div>
+        <!-- middle box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Naruto Store</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <!-- right box for some buttons -->
+        <div class="right">
+            <button class="btn">Buy Ramen</button><button class="btn">Feedback</button>
+        </div>
+        <div class="container">
+            <h1>Join naruto world!</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name"><br>
+                    <input type="text" name="" placeholder="Enter your age"><br>
+                    <input type="text" name="" placeholder="Enter your locality"><br>
+                    <input type="text" name="" placeholder="Enter your favorite naruto character"><br>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>
